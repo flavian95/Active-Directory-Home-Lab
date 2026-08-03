@@ -27,7 +27,7 @@ Configure these specific settings:
 
 - **Interactive logon: Machine inactivity limit** → `900` seconds (15 minutes)
 
-<img width="4000" height="300" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/Machine_Inactivity-Limit.png"/>
+<img width="400" height="300" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/Machine_Inactivity-Limit.png"/>
 
 – Machine inactivity limit set to 900 seconds.
 

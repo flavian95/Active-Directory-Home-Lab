@@ -27,7 +27,7 @@ Configure these specific settings:
 
 - **Interactive logon: Machine inactivity limit** → `900` seconds (15 minutes)
 
-<img width="1000" height="500" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/Machine_Inactivity-Limit.png"/>
+<img width="4000" height="300" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/Machine_Inactivity-Limit.png"/>
 
 – Machine inactivity limit set to 900 seconds.
 
@@ -40,7 +40,7 @@ Configure these specific settings:
 - Link this GPO to the `WORKSTATIONS` OU.
 - 
 
-<img width="400" height="300" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/Security_Hardening_Workstations.png"/>
+<img width="1000" height="500" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/Security_Hardening_Workstations.png"/>
 
 
 The `Security Hardening - Workstations` GPO linked to the `WORKSTATIONS` OU with Link Order 1.

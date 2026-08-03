@@ -9,6 +9,8 @@
   - Label: `Shared Drive`
   - Drive Letter: `S:`
 
-> 📸 **Screenshot:** `screenshots/Drive_Properties.png` – * showing the full Drive Map configuration with the `Replace` action, `S:` drive letter, and `\\DC01\Shared` location.
+<img width="800" height="450" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/Driver_Properties.png"/>
+
+> howing the full Drive Map configuration with the `Replace` action, `S:` drive letter, and `\\DC01\Shared` location.
 
 - Link this GPO to the `EMPLOYEES` OU.

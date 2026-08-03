@@ -27,13 +27,13 @@ Configure these specific settings:
 
 - **Interactive logon: Machine inactivity limit** → `900` seconds (15 minutes)
 
-<img width="400" height="300" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/Machine_Inactivity-Limit.png"/>
+<img width="1000" height="500" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/Machine_Inactivity-Limit.png"/>
 
 – Machine inactivity limit set to 900 seconds.
 
 - Under **Restricted Groups**, add the `Administrators` group and ensure `Domain Admins` is its only member (this removes other local admins).
 
-<img width="400" height="300" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/Restricted_Groups.png"/>
+<img width="1000" height="500" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/Restricted_Groups.png"/>
 
 – Navigating to **Restricted Groups** within the Security Settings tree.
 

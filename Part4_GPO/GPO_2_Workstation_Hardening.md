@@ -9,24 +9,38 @@ Configure these specific settings:
 
 - **User Account Control: Behavior of the elevation prompt for standard users** → `Automatically deny elevation requests`
 
-> 📸 **Screenshot:** `screenshots/UAC_Settings.png` – The two UAC settings configured as shown above.
+<img width="150" height="250" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/UAC_Settings.png/> 
+
+– The two UAC settings configured as shown above.
 
 - **Network security: LAN Manager authentication level** → `Send NTLMv2 response only. Refuse LM & NTLM`
 
-> 📸 **Screenshot:** `screenshots/LAN_Manager_Auth.png` – LAN Manager authentication level set to the most secure option.
+<img width="150" height="250" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/LAN_Manager_Auth.png"/>
+
+– LAN Manager authentication level set to the most secure option.
 
 - **Microsoft network client: Digitally sign communications (always)** → `Enabled`
 
-> 📸 **Screenshot:** `screenshots/Digital_Signin_Enforced.png` – Digital signing enforced for network communications.
+<img width="150" height="250" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/Digital_Signin_Enforced.png"/>
+
+> – Digital signing enforced for network communications.
 
 - **Interactive logon: Machine inactivity limit** → `900` seconds (15 minutes)
 
-> 📸 **Screenshot:** `screenshots/Machine_Inactivity_Limit.png` – Machine inactivity limit set to 900 seconds.
+<img width="150" height="250" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/Machine_Inactivity-Limit.png"/>
+
+– Machine inactivity limit set to 900 seconds.
 
 - Under **Restricted Groups**, add the `Administrators` group and ensure `Domain Admins` is its only member (this removes other local admins).
 
-> 📸 **Screenshot:** `screenshots/Restricted_Groups.png` – Navigating to **Restricted Groups** within the Security Settings tree.
+<img width="150" height="250" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/Restricted_Groups.png"/>
+
+– Navigating to **Restricted Groups** within the Security Settings tree.
 
 - Link this GPO to the `WORKSTATIONS` OU.
+- 
 
-> 📸 **Screenshot:** `screenshots/Security_Hardening_Workstations.png` – The `Security Hardening - Workstations` GPO linked to the `WORKSTATIONS` OU with Link Order 1.
+<img width="150" height="250" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/Security_Hardening_Workstations.png"/>
+
+
+The `Security Hardening - Workstations` GPO linked to the `WORKSTATIONS` OU with Link Order 1.

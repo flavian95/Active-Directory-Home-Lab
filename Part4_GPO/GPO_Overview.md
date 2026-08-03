@@ -27,11 +27,18 @@ Northwind required:
 
 After creating all GPOs, the **Group Policy Objects** container should list all four policies.
 
-> 📸 **Screenshot:** `screenshots/GPO_List.png` The complete list of GPOs: Default Domain Controller, Default Domain Policy, Security Hardening - Workstations, User Experience - Folder Redirection, and User Experience - Map Network Drive
+<img width="700" height="400" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/GPO_List.png"/>
+
+
+The complete list of GPOs: Default Domain Controller, Default Domain Policy, Security Hardening - Workstations, User Experience - Folder Redirection, and User Experience - Map Network Drive
 
 The `EMPLOYEES` OU should show both user‑experience GPOs linked.
 
-> 📸 **Screenshot:** `screenshots/OU_Link_Order.png` – The `EMPLOYEES` OU with **Link Order 1** (Folder Redirection) and **Link Order 2** (Map Network Drive), both enabled.
+
+<img width="700" height="400" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/OU_Link_Order.png"/>
+
+
+The `EMPLOYEES` OU with **Link Order 1** (Folder Redirection) and **Link Order 2** (Map Network Drive), both enabled.
 
 ## ✅ Summary
 

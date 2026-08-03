@@ -28,7 +28,7 @@ Northwind needed a directory service that could:
 
 Before building the structure, the domain itself was deployed using PowerShell.
 
-<img width="1022" height="723" alt="8" src="https://github.com/user-attachments/assets/8fe1bb0f-030f-4d22-8e17-f351377dee57" /> -The `Install-ADDSForest` script that created the `lab.local` forest.
+<img width="1022" height="723" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/ad_setup.png" /> -The `Install-ADDSForest` script that created the `lab.local` forest.
 
 This provided the foundation (Domain Controller `DC01`) on which all subsequent OUs, groups, users, and policies were built.
 

@@ -54,7 +54,9 @@ This split allows us to add/remove users from global groups (roles) independentl
   - **Group type**: `Security`
 - Repeat for `DL_HR_Share_RW` and `DL_Finance_Share_RO`.
 
-> 📸 **Screenshot:** `screenshots/All-Groups.png` – The right pane of the `_GROUPS` OU showing all seven groups (`G_FINANCE`, `G_HR_STAFF`, `G_IT_STAFF`, `G_SALES`, `DL_PRINTERS`, `DL_HR_SHARE`, `DL_FINANCE`) successfully created.
+<img width="1022" height="723" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/All_Groups.png" /> 
+
+– The right pane of the `_GROUPS` OU showing all seven groups (`G_FINANCE`, `G_HR_STAFF`, `G_IT_STAFF`, `G_SALES`, `DL_PRINTERS`, `DL_HR_SHARE`, `DL_FINANCE`) successfully created.
 
 ## ✅ Summary
 

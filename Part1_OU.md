@@ -54,7 +54,10 @@ This design:
 5. **Verify the structure** – your left pane should match the tree shown below.
 
 
-<img width="1022" height="723" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/OU_Tree.png" /> – The complete OU tree with `_MANAGED`, its sub‑OUs, and the groups already created inside `_GROUPS`.  
+<img width="1022" height="723" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/OU_Tree.png" /> 
+
+– The complete OU tree with `_MANAGED`, its sub‑OUs, and the groups already created inside `_GROUPS`. 
+
 <img width="1022" height="723" alt="8" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/screenshots/Expanded_Users.png" /> – The expanded `USERS` OU showing the `ADMIN`, `CONTRACTORS`, and `EMPLOYEES` sub‑OUs.
 
 ## ✅ Summary

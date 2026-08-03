@@ -43,9 +43,6 @@ The setup is broken into four logical parts, each documented in its own file:
 | [`part3-users.md`](part3-users.md) | User accounts – manual creation and bulk provisioning via PowerShell. |
 | [`part4-gpos.md`](part4-gpos.md) | Group Policy Objects – password/lockout policies, hardening, folder redirection, and drive mapping. |
 
-## 📸 Screenshots
-
-All screenshots are stored in the [`screenshots/`](screenshots/) folder and are referenced throughout the documentation.
 
 ## 📈 Outcome
 
@@ -58,6 +55,5 @@ After completing these steps, Northwind now has a fully functional Active Direct
 
 ---
 
-**Author:** [Your Name]  
-**Date:** [Date]  
-**License:** MIT
+**Author:** [Flavian Osip]  
+**Date:** [03/03/2026]  

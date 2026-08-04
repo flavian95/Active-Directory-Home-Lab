@@ -8,7 +8,7 @@ Test Case	Action	Expected Result	Actual Result	Screenshot
 3.2 – Save a test file	Open Documents, create new text file TestRedirection.txt.	File saves without access errors.	✅ Pass – file created.
 
 
-<img width="1000" height="550" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/testing-screenshots/test-redirection-host.png" /> 
+<img width="800" height="450" src="https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/testing-screenshots/test-redirection-host.png" /> 
 
 the local client view showing TestRedirection.txt in the redirected Documents folder.
 

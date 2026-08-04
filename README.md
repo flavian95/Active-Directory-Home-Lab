@@ -36,12 +36,21 @@ This provided the foundation (Domain Controller `DC01`) on which all subsequent 
 
 The setup is broken into four logical parts, each documented in its own file:
 
-| File | Description |
-|------|-------------|
-| [`part1-ous.md`](part1-ous.md) | Organizational Units (OUs) – how we structured the directory. |
-| [`part2-groups.md`](part2-groups.md) | Security groups – role‑based and resource‑based groups for access control. |
-| [`part3-users.md`](part3-users.md) | User accounts – manual creation and bulk provisioning via PowerShell. |
-| [`part4-gpos.md`](part4-gpos.md) | Group Policy Objects – password/lockout policies, hardening, folder redirection, and drive mapping. |
+## 📂 Documentation Structure
+
+The setup is broken into logical parts, each documented in its own file or folder:
+
+| File / Folder | Description |
+|---|---|
+| [`Part1_OU.md`](https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/Part1_OU.md) | Organizational Units (OUs) – how we structured the directory. |
+| [`Part2_Security_Groups.md`](https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/Part2_Security_Groups.md) | Security groups – role‑based and resource‑based groups for access control. |
+| [`Part3_User_Accounts.md`](https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/Part3_User_Accounts.md) | User accounts – manual creation and bulk provisioning via PowerShell. |
+| [`Part4_GPO/`](https://github.com/flavian95/Active-Directory-Home-Lab/tree/main/Part4_GPO) | Group Policy Objects – password/lockout policies, hardening, folder redirection, and drive mapping. |
+| [`Part5_Testing/`](https://github.com/flavian95/Active-Directory-Home-Lab/tree/main/Part5_Testing) | Validation & testing – step‑by‑step test cases covering password policies, workstation hardening, folder redirection, and drive mapping, with results and screenshots. |
+| [`screenshots/`](https://github.com/flavian95/Active-Directory-Home-Lab/tree/main/screenshots) | Screenshots from the implementation phases (OUs, groups, users, GPOs). |
+| [`testing-screenshots/`](https://github.com/flavian95/Active-Directory-Home-Lab/tree/main/testing-screenshots) | Screenshots from the validation testing phase. |
+| [`ad-bulk-user-creation.ps1`](https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/ad-bulk-user-creation.ps1) | PowerShell script used for bulk user provisioning. |
+| [`README.md`](https://github.com/flavian95/Active-Directory-Home-Lab/blob/main/README.md) | This overview – project scope, business requirements, and outcomes. |
 
 
 ## 📈 Outcome

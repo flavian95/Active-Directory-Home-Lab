@@ -64,5 +64,48 @@ After completing these steps, Northwind now has a fully functional Active Direct
 
 ---
 
+## 🧪 Testing & Validation
+
+A robust infrastructure is only as good as its real‑world performance. After completing the setup, I thoroughly tested every critical component to ensure the environment meets Northwind’s business requirements for security, user experience, and reliability.
+
+A **new Windows VM** was joined to the domain (`lab.local`) and used as the test workstation, with `john.smith` (and other test users) logging in to validate the applied Group Policies.
+
+### 📋 Test Phases Overview
+
+| Phase | Focus Area | Key Verifications |
+|---|---|---|
+| **1** | Password & Lockout Policy | Enforce 14‑char minimum, complexity, and lockout after 5 failed attempts (30‑min reset). |
+| **2** | Workstation Hardening | Block standard users from admin tasks, auto‑lock idle screens (15 min), block insecure legacy protocols. |
+| **3** | Folder Redirection | Confirm user `Documents` are stored centrally on `\\DC01\Users$\%USERNAME%\Documents`. |
+| **4** | Drive Mapping | Verify the `S:` drive automatically maps to `\\DC01\Shared` upon login. |
+
+### ✅ Test Results Summary
+
+- **Password Policy** – Successfully rejected weak passwords (e.g., `Password123`) and enforced a 14‑character minimum. Lockout triggered after 5 invalid login attempts and reset after exactly 30 minutes.
+  
+- **Workstation Hardening** – Standard users (like `john.smith`) were unable to delete system folders (UAC auto‑deny). The `whoami /groups` command confirmed that `BUILTIN\Administrators` is set to **"Deny only"**, proving users have zero local admin rights. The screen locks automatically after 15 minutes of inactivity.
+
+- **Folder Redirection** – Creating a file (`TestRedirection.txt`) in the `Documents` folder on the client made it instantly appear on the Domain Controller at `C:\UserData\john.smith\Documents`, confirming successful central storage.
+
+- **Drive Mapping** – The `Shared Drive (S:)` appeared automatically in File Explorer under *This PC*. Files saved there (e.g., `TestMapping.txt`) were correctly written to the server’s `C:\Shared` folder.
+
+> 📸 **All test screenshots** are available in the [`testing-screenshots/`](testing-screenshots/) folder, including the UAC elevation denial, invalid credential lockout, password change failure, mapped drive visibility, and client/server folder redirection verification.
+
+### 🏁 Final Outcome
+
+**All test cases passed.** The Active Directory environment is now fully operational and production‑ready:
+
+- ✅ Strong password enforcement and account lockout protect against brute‑force attacks.
+- ✅ Workstations are hardened, preventing privilege escalation and securing idle sessions.
+- ✅ User documents are safely backed up on the server, enabling seamless roaming and disaster recovery.
+- ✅ Automated drive mapping simplifies access to company‑wide resources.
+
+This validation confirms that the infrastructure not only follows best practices but also delivers the business value Northwind required from day one.
+
+---
+
+**Need to replicate this setup?** Check out the [PowerShell script](ad-bulk-user-creation.ps1) for bulk user creation, and follow each part in order:
+[`Part1_OU.md`](Part1_OU.md) ➜ [`Part2_Security_Groups.md`](Part2_Security_Groups.md) ➜ [`Part3_User_Accounts.md`](Part3_User_Accounts.md) ➜ [`Part4_GPO/`](Part4_GPO) ➜ [`Part5_Testing/`](Part5_Testing)
+
 **Author:** [Flavian Osip]  
 **Date:** [Aug 03 2026]  
